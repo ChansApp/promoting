@@ -300,22 +300,22 @@
             }
         }, this);
 
-        // close btn
-        if (this.opts.closeMethods.indexOf('button') !== -1) {
-            this.modalCloseBtn = document.createElement('button');
-            this.modalCloseBtn.classList.add('tingle-modal__close');
-
-            this.modalCloseBtnIcon = document.createElement('span');
-            this.modalCloseBtnIcon.classList.add('tingle-modal__closeIcon');
-            this.modalCloseBtnIcon.innerHTML = '×';
-
-            this.modalCloseBtnLabel = document.createElement('span');
-            this.modalCloseBtnLabel.classList.add('tingle-modal__closeLabel');
-            this.modalCloseBtnLabel.innerHTML = this.opts.closeLabel;
-
-            this.modalCloseBtn.appendChild(this.modalCloseBtnIcon);
-            this.modalCloseBtn.appendChild(this.modalCloseBtnLabel);
-        }
+        // // close btn
+        // if (this.opts.closeMethods.indexOf('button') !== -1) {
+        //     this.modalCloseBtn = document.createElement('button');
+        //     this.modalCloseBtn.classList.add('tingle-modal__close');
+        //
+        //     this.modalCloseBtnIcon = document.createElement('span');
+        //     this.modalCloseBtnIcon.classList.add('tingle-modal__closeIcon');
+        //     this.modalCloseBtnIcon.innerHTML = '×';
+        //
+        //     this.modalCloseBtnLabel = document.createElement('span');
+        //     this.modalCloseBtnLabel.classList.add('tingle-modal__closeLabel');
+        //     this.modalCloseBtnLabel.innerHTML = this.opts.closeLabel;
+        //
+        //     this.modalCloseBtn.appendChild(this.modalCloseBtnIcon);
+        //     this.modalCloseBtn.appendChild(this.modalCloseBtnLabel);
+        // }
 
         // modal
         this.modalBox = document.createElement('div');
@@ -326,10 +326,10 @@
         this.modalBoxContent.classList.add('tingle-modal-box__content');
 
         this.modalBox.appendChild(this.modalBoxContent);
-
-        if (this.opts.closeMethods.indexOf('button') !== -1) {
-            this.modal.appendChild(this.modalCloseBtn);
-        }
+        //
+        // if (this.opts.closeMethods.indexOf('button') !== -1) {
+        //     this.modal.appendChild(this.modalCloseBtn);
+        // }
 
         this.modal.appendChild(this.modalBox);
 
@@ -350,9 +350,9 @@
             keyboardNav: _handleKeyboardNav.bind(this)
         };
 
-        if (this.opts.closeMethods.indexOf('button') !== -1) {
-            this.modalCloseBtn.addEventListener('click', this._events.clickCloseBtn);
-        }
+        // if (this.opts.closeMethods.indexOf('button') !== -1) {
+        //     this.modalCloseBtn.addEventListener('click', this._events.clickCloseBtn);
+        // }
 
         this.modal.addEventListener('mousedown', this._events.clickOverlay);
         window.addEventListener('resize', this._events.resize);
@@ -368,10 +368,10 @@
 
     function _handleClickOutside(event) {
         // if click is outside the modal
-        if (this.opts.closeMethods.indexOf('overlay') !== -1 && !_findAncestor(event.target, 'tingle-modal') &&
-        event.clientX < this.modal.clientWidth) {
-            this.close();
-        }
+        // if (this.opts.closeMethods.indexOf('overlay') !== -1 && !_findAncestor(event.target, 'tingle-modal') &&
+        // event.clientX < this.modal.clientWidth) {
+        //     this.close();
+        // }
     }
 
     function _findAncestor(el, cls) {
