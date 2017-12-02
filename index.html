@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Modal plugin written in pure JavaScript - Tingle</title>
-    <meta name="description" content="A minimalist and easy-to-neuse modal plugin written in pure JavaScript">
+    <title>Chans</title>
+    <meta name="description" content="channels and bots of Telegram">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="favicon-96x96.png" />
     <link rel="stylesheet" href="normalize.css" media="all">
     <link rel="stylesheet" href="monokai_sublime.css" media="all">
     <link rel="stylesheet" href="demo.css" media="all">
@@ -17,14 +18,15 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+
         <div class="tingle-demo tingle-demo-tiny">
             <h2>Do you have Chans app installed on this device?</h2>
             <p>If it's installed we would open app immediately, if not - you will be redirected to the AppStore to install it</p>
         </div>
-     
 
     <script src="tingle.js"></script>
     <script type="text/javascript">
+
 
     function get(name) {
    if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
@@ -39,8 +41,7 @@
 
     modalTinyBtn.onClose = function() {
       alert('kek')
-    };    
-
+    };
     var btn2 = document.querySelector('.js-tingle-modal-2');
 
     modalTinyBtn.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
@@ -57,7 +58,7 @@
 
     modalTinyBtn.open();
 
-
     </script>
+
 </body>
 </html>
