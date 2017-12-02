@@ -1,4 +1,7 @@
 <script>
-  alert('do you have Chans app installed on this device?');
-window.location = 'chans://';
+  if (confirm('Do you have Chans app installed on this device?')) {
+  window.location = 'chans://';
+} else {
+  window.location = 'https://itunes.apple.com/app/id1314000625';
+}
   </script>
