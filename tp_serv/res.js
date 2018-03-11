@@ -1,3 +1,3 @@
-{
+return '{
 "shouldWork": 0
-}
+}'
