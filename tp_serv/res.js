@@ -1,3 +1,3 @@
 {
-  "shouldWork": 1
+  "shouldWork": 0
 }
