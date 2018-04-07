@@ -48,6 +48,8 @@ document.querySelector('meta[name="description"]').setAttribute("content", "Tele
     var btn2 = document.querySelector('.js-tingle-modal-2');
 
     modalTinyBtn.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+        
+    window.location = get('firebaselink');
 
     modalTinyBtn.addFooterBtn('iOS (AppStore)', 'tingle-btn tingle-btn--primary tingle-btn--pull-right', function() {
       window.location = get('firebaselink');
