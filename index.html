@@ -22,8 +22,8 @@
 <body>
 
         <div class="tingle-demo tingle-demo-tiny">
-            <h2>Do you have Chans app installed on this device?</h2>
-            <p>If it's installed we would open app immediately, if not - you will be redirected to the AppStore to install it</p>
+            <h2>Choose your platform</h2>
+            <p>You will be redirected to AppStore or GooglePlay</p>
         </div>
 
     <script src="tingle.js"></script>
@@ -44,18 +44,16 @@ document.querySelector('meta[name="description"]').setAttribute("content", "Tele
     });
 
     modalTinyBtn.onClose = function() {
-      alert('kek')
     };
     var btn2 = document.querySelector('.js-tingle-modal-2');
 
     modalTinyBtn.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
 
-    modalTinyBtn.addFooterBtn('Yes', 'tingle-btn tingle-btn--primary tingle-btn--pull-right', function() {
-      var domain = get('domain');
-        window.location = 'chans://promoting?domain=' + domain;
+    modalTinyBtn.addFooterBtn('iOS (AppStore)', 'tingle-btn tingle-btn--primary tingle-btn--pull-right', function() {
+      window.location = get('firebaselink');
     });
 
-    modalTinyBtn.addFooterBtn('No', 'tingle-btn tingle-btn--default', function(){
+    modalTinyBtn.addFooterBtn('Android (Gooole Play)', 'tingle-btn tingle-btn--default', function(){
       window.location = get('firebaselink');
     });
 
