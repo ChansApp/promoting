@@ -5,6 +5,9 @@
       {
         "appID": "W7CBSA6Z74.com.konstantin-cherkashin.canalgram",
         "paths": ["*"]
+      }, {
+        "appID": "3L28P6ELCW.com.kostantin-cherkashin.GuideAgain",
+        "paths": ["*"]
       }
     ]
   }
