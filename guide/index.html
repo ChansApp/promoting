@@ -20,8 +20,10 @@
 
         <div class="tingle-demo tingle-demo-tiny">
             <h2>Welcome to Saint | Petersburg</h2>
+            <h4>This is a guide for the city, powered by AI</h4>
+            <h6>If you have the app already installed on your device, choose 'Open the app' button, otherwise - click 'Open App Store'</h6>
         </div>
-    
+
 
     <script src="tingle.js"></script>
     <script type="text/javascript">
@@ -38,7 +40,7 @@ document.querySelector('meta[name="description"]').setAttribute("content", "Tele
     var btn2 = document.querySelector('.js-tingle-modal-2');
     modalTinyBtn.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
         
-    modalTinyBtn.addFooterBtn('Open App Store)', 'tingle-btn tingle-btn--primary tingle-btn--pull-right', function() {
+    modalTinyBtn.addFooterBtn('Open App Store', 'tingle-btn tingle-btn--primary tingle-btn--pull-right', function() {
       window.location = 'https://itunes.apple.com/app/id1467906153';
     });
     modalTinyBtn.addFooterBtn('Open the app', 'tingle-btn tingle-btn--default', function(){
