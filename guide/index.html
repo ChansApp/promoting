@@ -1,1 +1,51 @@
-Template page
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saint | Petersburg</title>
+    <meta name="title" content="Saint | Petersburg">
+    <meta name="description" content="A guide for the city powered by AI">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="favicon-96x96.png" />
+    <meta name="apple-itunes-app" content="app-id=1467906153">
+    <link rel="stylesheet" href="normalize.css" media="all">
+    <link rel="stylesheet" href="monokai_sublime.css" media="all">
+    <link rel="stylesheet" href="demo.css" media="all">
+    <link rel="stylesheet" href="tingle.css" media="all">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+        <div class="tingle-demo tingle-demo-tiny">
+            <h2>Welcome to Saint | Petersburg</h2>
+        </div>
+    
+
+    <script src="tingle.js"></script>
+    <script type="text/javascript">
+    function get(name) {
+   if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+      return decodeURIComponent(name[1]);
+};
+document.querySelector('meta[name="description"]').setAttribute("content", "Telegram - " + get('domain'));
+    var modalTinyBtn = new tingle.modal({
+        footer: true
+    });
+    modalTinyBtn.onClose = function() {
+    };
+    var btn2 = document.querySelector('.js-tingle-modal-2');
+    modalTinyBtn.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+        
+    modalTinyBtn.addFooterBtn('Open App Store)', 'tingle-btn tingle-btn--primary tingle-btn--pull-right', function() {
+      window.location = 'https://itunes.apple.com/app/id1467906153';
+    });
+    modalTinyBtn.addFooterBtn('Open the app', 'tingle-btn tingle-btn--default', function(){
+      window.location = 'saintpb://?slug=' + get('slug');
+    });
+    modalTinyBtn.open();
+    </script>
+
+</body>
+</html>
