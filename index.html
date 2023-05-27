@@ -23,8 +23,8 @@
 
         <div class="tingle-demo tingle-demo-tiny">
             <h2>Welcome to Chans</h2>
-            <h4>Please, choose your platrofm. You will be redirected to App Store or Google Play.</h4>
-            <p>If you have your own Telegram channel, contact us to promote your channel: <a href="https://t.me/chanspartnership" style="color: #3498db">@ChansPartnership</a></p>
+            <h4>Sorry, web version is no longer supported :/</h4>
+            <p>If you have any questions, reach out via telegram: <a href="https://t.me/chanspartnership" style="color: #3498db">@ChansPartnership</a></p>
         </div>
     
 
@@ -48,17 +48,6 @@ document.querySelector('meta[name="description"]').setAttribute("content", "Tele
     var btn2 = document.querySelector('.js-tingle-modal-2');
 
     modalTinyBtn.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
-        
-//     window.location = get('firebaselink');
-
-    modalTinyBtn.addFooterBtn('iOS (App Store)', 'tingle-btn tingle-btn--primary tingle-btn--pull-right', function() {
-      window.location = get('firebaselink');
-    });
-
-    modalTinyBtn.addFooterBtn('Android (Google Play)', 'tingle-btn tingle-btn--default', function(){
-      window.location = get('firebaselink');
-    });
-
 
     modalTinyBtn.open();
 
